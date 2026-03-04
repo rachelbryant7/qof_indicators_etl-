@@ -1,5 +1,6 @@
 #import packages
 import os
+import pandas as pd
 
 from dotenv import load_dotenv
 from os import getenv
@@ -29,9 +30,8 @@ def get_files(data_dir, file_ext=""):
 
     return dir_list
 
-data_dir =  r"C:\Users\RABRYANT\Code\qof_indicators_etl-\data"
+data_dir = getenv("RAW_DATA")
 files = get_files(data_dir, file_ext="csv")
-
 
 #establish snowflake connection
 ctx = create_connection(
@@ -49,7 +49,7 @@ for f in files:
     # Extract filename without extension and get table name
     filename = os.path.basename(file_path)
     
-    # remove _v2 from file name for cleanliness
+    #remove _v2 from file name for cleanliness
     if filename.endswith("_v2.csv"):    
         filename = filename.replace("_v2", "")
 
