@@ -1,10 +1,8 @@
 #import packages
 import os
 
-from datetime import datetime
 from dotenv import load_dotenv
 from os import getenv
-import pandas as pd
 
 from utils.snowflake_ncl import upload_df
 from utils.snowflake_ncl import create_connection
