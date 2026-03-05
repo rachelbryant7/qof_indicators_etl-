@@ -9,8 +9,8 @@ def create_connection(
         role="ANALYST", 
         warehouse="NCL_ANALYTICS_XS",
         authentication="externalbrowser",
-        database="DEV__MODELLING", 
-        schema="CANCER__QOF"):
+        database="DATA_LAKE__NCL", 
+        schema="ANALYST_MANAGED"):
     
         return snowflake.connector.connect(
              account=account,
@@ -203,8 +203,8 @@ def upload_df(
         ctx,
         df, 
         table_name, 
-        database="DEV__MODELLING", 
-        schema="CANCER__QOF",
+        database="DATA_LAKE__NCL", 
+        schema="ANALYST_MANAGED",
         replace=False,
         table_columns=False,
         table_description=False,

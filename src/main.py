@@ -53,7 +53,11 @@ for f in files:
     if filename.endswith("_v2.csv"):    
         filename = filename.replace("_v2", "")
 
-    table_name = os.path.splitext(filename)[0].upper()
+    #create table names
+    table_name = f"CANCER__QOF_{os.path.splitext(filename)[0].upper()}"
+
+    print(table_name)
+
 
     # Load CSV
     df = pd.read_csv(file_path)
