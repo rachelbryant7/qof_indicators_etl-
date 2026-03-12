@@ -4,7 +4,7 @@ This git repository uploads all downloaded QOF data files and uploads them to Sn
 
 Raw data files can be found here: https://digital.nhs.uk/data-and-information/publications/statistical/quality-and-outcomes-framework-achievement-prevalence-and-exceptions-data 
 
-Before running the code, save the raw CSVs named ACHIEVEMENT_XXXX.csv and ACHIEVEMENT_LONDON_XXXX.csv, depending on the fiscal year, in the data folder of this repo. Then, run the main.py file. 
+Before running the code, save the raw CSVs named ACHIEVEMENT_XXXX.csv and ACHIEVEMENT_LONDON_XXXX.csv, depending on the fiscal year, in the data folder of this repo. Years 19/20 - 21/22 contain national data and are labelled as the first instance and the following years as the second. Then, ensure you have a relevant .env file set up and run the main.py file. 
 
 ## Changelog
 
