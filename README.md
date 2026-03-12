@@ -4,6 +4,8 @@ This git repository uploads all downloaded QOF data files and uploads them to Sn
 
 Raw data files can be found here: https://digital.nhs.uk/data-and-information/publications/statistical/quality-and-outcomes-framework-achievement-prevalence-and-exceptions-data 
 
+Before running the code, save the raw CSVs named ACHIEVEMENT_XXXX.csv and ACHIEVEMENT_LONDON_XXXX.csv, depending on the fiscal year, in the data folder of this repo. Then, run the main.py file. 
+
 ## Changelog
 
 ### [1.0.0] - 2026-03-04
@@ -16,3 +18,9 @@ This repository is dual licensed under the [Open Government v3]([https://www.nat
 
 ## Contact
 Rachel Bryant - rcahel.bryant7@nhs.net 
+
+## Scripting Guidance
+ 
+Please refer to the Internal Scripting Guide documentation for instructions on setting up coding projects including virtual environments (venv).
+ 
+The Internal Scripting Guide is available here: [Internal Scripting Guide](https://nhs.sharepoint.com/:w:/r/sites/msteams_38dd8f/Shared%20Documents/Document%20Library/Documents/Git%20Integration/Internal%20Scripting%20Guide.docx?d=wc124f806fcd8401b8d8e051ce9daab87&csf=1&web=1&e=qt05xI)
